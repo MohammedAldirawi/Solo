@@ -618,3 +618,64 @@ ul.social-list li:nth-child(3) a:hover {
     background-color: var(--grey);
     border: 1px solid var(--grey);
 }
+
+
+/* Portfolio */
+
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding: 0;
+}
+
+.portfolio-item {
+    overflow: hidden;
+}
+
+
+/* Filters */
+
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+
+#isotope-filters button {
+    font-family: var(--raleway), sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-box-shdow: none;
+    box-shadow: none;
+    padding-right: 30px;
+}
+
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+    -webkit-transition: border-bottom .4s ease-in-out;
+    transition: border-bottom .4s ease-in-out;
+}
+
+#isotope-filters button.active span {
+    color: var(--moon-yallow);
+    border-bottom: 3px solid var(--moon-yallow);
+}
+
+
+/* Zoom Effects */
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    -webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+.portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
