@@ -30,3 +30,11 @@ $(function() {
         this.destroy();
     }, { offset: 'bottom-in-view' });
 });
+
+
+// Responsive Tabs
+$(function() {
+    $('#services-tabs').responsiveTabs({
+        animation: 'slide'
+    });
+});

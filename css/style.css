@@ -224,6 +224,7 @@ section {
 }
 
 #about-bottom img {
+    display: block;
     margin: 0 auto;
 }
 
@@ -411,29 +412,35 @@ ul.social-list li:nth-child(3) a:hover {
 .progress {
     height: 25px;
     border-radius: 0;
-    background: var(--white-smoke);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: var(--white-smoke);
     overflow: visible;
 }
 
 .progress-bar {
     background-color: var(--moon-yallow);
     position: relative;
+    overflow: visible;
 }
 
 .progress-bar span {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 100;
-    font-family: var(--open-sans), sans-serif;
-    background: var(--grey);
-    padding: 3px;
+    font-family: var(--open-sans);
+    background-color: var(--grey);
+    padding: 11px;
     position: absolute;
     left: 97%;
-    top: -47px;
+    top: -42px;
+    line-height: 6px;
 }
 
 .progress-bar span:before {
     content: "";
-    border-top: 8px solid var(--grey);
+    border-top: 8px solid var(--light-grey);
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
     position: absolute;
@@ -530,4 +537,84 @@ ul.social-list li:nth-child(3) a:hover {
 
 .service p {
     line-height: normal;
+}
+
+
+/* Services 02 (Responsive Tabs) */
+
+#services-02 {
+    background: var(--white-smoke);
+}
+
+#services-02 ul {
+    margin-bottom: 40px;
+}
+
+#services-02 ul li {
+    padding: 5px 30px;
+}
+
+#services-02 ul li a {
+    font-family: var(--raleway), sans-serif;
+    font-size: 13px;
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+}
+
+#services-02 ul li.r-tabs-state-active a {
+    color: var(--moon-yallow);
+    font-weight: 700;
+    border-bottom: 3px solid var(--moon-yallow);
+    padding-bottom: 5px;
+    -webkit-transition: border-color 300ms linear;
+    transition: border-color 300ms linear;
+}
+
+.service-tab .col-md-6 {
+    padding: 0;
+}
+
+.service-tab img {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 481px;
+}
+
+.service-tab .tab-bg {
+    background: var(--white);
+    padding: 59px 30px;
+    min-height: 481px;
+}
+
+.service-tab h2 {
+    font-size: 48px;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+
+.service-tab h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service-tab p {
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.btn-yellow {
+    color: var(--white);
+    background-color: var(--moon-yallow);
+    border: 1px solid var(--moon-yallow);
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus {
+    color: #fff;
+    background-color: var(--grey);
+    border: 1px solid var(--grey);
 }
