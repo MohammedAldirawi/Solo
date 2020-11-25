@@ -60,3 +60,14 @@ $(window).on('load', function() {
         $(this).addClass('active');
     });
 });
+
+// Popup
+$(function() {
+    $('#portfolio-wrapper').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
