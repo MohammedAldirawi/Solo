@@ -87,3 +87,12 @@ $(function() {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
+
+// Stats Counter
+
+$(function() {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+});
