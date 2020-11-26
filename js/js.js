@@ -110,3 +110,44 @@ $(function() {
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
+
+// Map
+
+$(window).on('load', function() {
+    // Map Vars
+    var addressString = '230 Broadway, NY, New York 10007 USA';
+    var myLating = {
+        let: 40.712685,
+        lng: -74.005920
+    };
+    // 1. Render Map
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: myLating
+    });
+    // 2. Add Marker
+    var marker = new google.maps.Marker({
+        position: myLating,
+        map: map,
+        title: 'Click To See Address'
+    });
+    // 3. Add Info Window
+    var infowindow = new google.maps.InfoWindow({
+        content: addressString
+    });
+    // Show Info Window when user clicks marker
+    marker.addListener('click', function() {
+        infowindow.open(map, marker);
+    });
+});
+
+
+/*
+function myMap() {
+    var mapProp = {
+        center: new google.maps.LatLing(51.508742, -0.120850),
+        zoom: 5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+*/
