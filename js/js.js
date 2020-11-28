@@ -141,6 +141,52 @@ $(window).on('load', function() {
     });
 });
 
+// Navigation => White Nav
+$(function() {
+    // show/hide nav on load
+    showHideNav();
+    $(window).scroll(function() {
+        // show/hide nav on scroll
+        showHideNav();
+    });
+
+    function showHideNav() {
+        if ($(window).scrollTop() > 50) {
+            // Show White Nav
+            $("nav").addClass('white-nav-top');
+            // Show Dark Logo
+            $(".navbar-brand img").attr("src", "img/logo/logo-dark.png");
+            // Show Back To Top Button
+            $("#back-to-top").fadeIn();
+        } else {
+            // Hide White Nav
+            $("nav").removeClass("white-nav-top");
+            // Show Logo
+            $(".navbar-brand img").attr("src", "img/logo/logo.png");
+            // Hide Back To Top Button
+            $("#back-to-top").fadeOut();
+        }
+    }
+});
+
+// Smooth Scrolling
+
+$(function() {
+    $("a.smmoth-scroll").click(function(event) {
+        event.preventDefault();
+        // Get Section Id
+        var section_id = $(this).attr("href");
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 1250, "easeInOutExpo");
+    });
+});
+
+
+
+
+
+
 
 /*
 function myMap() {
