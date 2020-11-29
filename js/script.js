@@ -1,7 +1,7 @@
 /* =========================================
                 Preloader
 ============================================ */
-$(window).on('load', function () { // makes sure that whole site is loaded
+$(window).on('load', function() { // makes sure that whole site is loaded
     $('#status').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
 });
@@ -10,7 +10,7 @@ $(window).on('load', function () { // makes sure that whole site is loaded
 /* =========================================
                 Team
 ============================================ */
-$(function () {
+$(function() {
     $("#team-members").owlCarousel({
         items: 2,
         autoplay: true,
@@ -36,11 +36,11 @@ $(function () {
 /* =========================================
                 Progress Bars
 ============================================ */
-$(function () {
+$(function() {
 
-    $("#progress-elements").waypoint(function () {
+    $("#progress-elements").waypoint(function() {
 
-        $(".progress-bar").each(function () {
+        $(".progress-bar").each(function() {
 
             $(this).animate({
                 width: $(this).attr("aria-valuenow") + "%"
@@ -58,7 +58,7 @@ $(function () {
 /* =========================================
                Responsive Tabs
 ============================================ */
-$(function () {
+$(function() {
 
     $("#services-tabs").responsiveTabs({
         animation: 'slide'
@@ -70,13 +70,13 @@ $(function () {
 /* =========================================
                Portfolio
 ============================================ */
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     // Initialize Isotope
     $("#isotope-container").isotope({});
 
     // filter items on button click
-    $("#isotope-filters").on('click', 'button', function () {
+    $("#isotope-filters").on('click', 'button', function() {
 
         // get filter value
         var filterValue = $(this).attr('data-filter');
@@ -94,7 +94,7 @@ $(window).on('load', function () {
 /* =========================================
                Magnifier
 ============================================ */
-$(function () {
+$(function() {
 
     $("#portfolio-wrapper").magnificPopup({
         delegate: 'a', // child items selector, by clicking on it popup will open
@@ -109,7 +109,7 @@ $(function () {
 /* =========================================
                Testimonials
 ============================================ */
-$(function () {
+$(function() {
     $("#testimonial-slider").owlCarousel({
         items: 1,
         autoplay: false,
@@ -126,7 +126,7 @@ $(function () {
 /* =========================================
               Stats
 ============================================ */
-$(function () {
+$(function() {
 
     $(".counter").counterUp({
         delay: 10,
@@ -139,7 +139,7 @@ $(function () {
 /* =========================================
               Clients
 ============================================ */
-$(function () {
+$(function() {
     $("#clients-list").owlCarousel({
         items: 6,
         autoplay: false,
@@ -170,7 +170,7 @@ $(function () {
 /* =========================================
               Google Map
 ============================================ */
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     // Map Variables
     var addressString = '230 Broadway, NY, New York 10007, USA';
@@ -198,12 +198,12 @@ $(window).on('load', function () {
     });
 
     // Show info window when user clicks marker
-    marker.addListener('click', function () {
+    marker.addListener('click', function() {
         infowindow.open(map, marker);
     });
 
     // 4. Resize Function
-    google.maps.event.addDomListener(window, 'resize', function () {
+    google.maps.event.addDomListener(window, 'resize', function() {
 
         var center = map.getCenter();
         google.maps.event.trigger(map, 'resize');
@@ -219,12 +219,12 @@ $(window).on('load', function () {
 ============================================ */
 
 /* Show & Hide White Navigation */
-$(function () {
+$(function() {
 
     // show/hide nav on page load
     showHideNav();
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
 
         // show/hide nav on window's scroll
         showHideNav();
@@ -258,9 +258,9 @@ $(function () {
 });
 
 // Smooth Scrolling
-$(function () {
+$(function() {
 
-    $("a.smooth-scroll").click(function (event) {
+    $("a.smooth-scroll").click(function(event) {
 
         event.preventDefault();
 
@@ -278,15 +278,15 @@ $(function () {
 /* =========================================
               Mobile Menu
 ============================================ */
-$(function () {
+$(function() {
 
     // Show mobile nav
-    $("#mobile-nav-open-btn").click(function () {
+    $("#mobile-nav-open-btn").click(function() {
         $("#mobile-nav").css("height", "100%");
     });
 
     // Hide mobile nav
-    $("#mobile-nav-close-btn, #mobile-nav a").click(function () {
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
         $("#mobile-nav").css("height", "0%");
     });
 
@@ -296,12 +296,12 @@ $(function () {
                 Animation
 ============================================ */
 // animate on scroll
-$(function () {
+$(function() {
     new WOW().init();
 });
 
 // home animation on page load
-$(window).on('load', function () {
+$(window).on('load', function() {
 
     $("#home-heading-1").addClass("animated fadeInDown");
     $("#home-heading-2").addClass("animated fadeInLeft");
