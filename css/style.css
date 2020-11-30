@@ -41,6 +41,31 @@ section {
 }
 
 
+/* Preloader */
+
+#preloader {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("../img/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -35px;
+    margin-left: -35px;
+}
+
+
 /* Home */
 
 #home {
@@ -286,6 +311,10 @@ section {
 
 
 /* Team */
+
+#team {
+    padding-top: 100px;
+}
 
 #team-left .vertical-heading {
     min-height: 160px;

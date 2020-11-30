@@ -1,5 +1,10 @@
-// Team
+// Preloader
+$(window).on('load', function() {
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+});
 
+// Team
 $(function() {
     $("#team-members").owlCarousel({
         items: 2,
@@ -21,10 +26,7 @@ $(function() {
     });
 });
 
-
-
 // Progress Bars
-
 $(function() {
     $('#progress-elements').waypoint(function() {
         $('.progress-bar').each(function() {
@@ -34,7 +36,6 @@ $(function() {
     }, { offset: 'bottom-in-view' });
 });
 
-
 // Responsive Tabs
 $(function() {
     $('#services-tabs').responsiveTabs({
@@ -42,14 +43,10 @@ $(function() {
     });
 });
 
-
 // Portfolio
-
 $(window).on('load', function() {
     // Initialize
-    $("#isotope-container").isotope({
-
-    });
+    $("#isotope-container").isotope({});
     // Filter Items
     $("#isotope-filters").on('click', 'button', function() {
         // Git filter value
@@ -90,7 +87,6 @@ $(function() {
 });
 
 // Stats Counter
-
 $(function() {
     $('.counter').counterUp({
         delay: 10,
@@ -112,7 +108,6 @@ $(function() {
     });
 });
 
-
 /* Google Map */
 // Initialize and add the map
 $(function initMap() {
@@ -130,10 +125,8 @@ $(function initMap() {
     });
 });
 
-
 // Navigation => White Nav
 $(function() {
-
     $(window).scroll(function() {
         if ($(window).scrollTop() > 50) {
             // Show white bg
@@ -142,7 +135,6 @@ $(function() {
             $('.navbar-brand img').attr('src', 'img/logo/logo-dark.png');
             //back to top button
             $('#back-to-top').fadeIn();
-
         } else {
             $('nav').removeClass('white-navbar');
             $('.navbar-brand img').attr('src', 'img/logo/logo.png');
@@ -152,7 +144,6 @@ $(function() {
 });
 
 // Smooth Scrolling
-
 $(function() {
     $("a.smmoth-scroll").click(function(event) {
         event.preventDefault();
