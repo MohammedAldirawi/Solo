@@ -560,15 +560,15 @@ ul.social-list li:nth-child(3) a:hover {
     background: var(--white-smoke);
 }
 
-#services-tabs ul {
+#services-02 ul {
     margin-bottom: 40px;
 }
 
-#services-tabs ul li {
+#services-02 ul li {
     padding: 5px 30px;
 }
 
-#services-tabs ul li a {
+#services-02 ul li a {
     font-family: var(--raleway), sans-serif;
     font-size: 13px;
     color: var(--grey);
@@ -578,7 +578,7 @@ ul.social-list li:nth-child(3) a:hover {
     text-decoration: none;
 }
 
-#services-tabs ul li.r-tabs-state-active a {
+#services-02 ul li.r-tabs-state-active a {
     color: var(--moon-yallow);
     font-weight: 700;
     border-bottom: 3px solid var(--moon-yallow);
@@ -1126,9 +1126,9 @@ ul.office-details {
 ul.office-details li {
     font-family: var(--open-sans), sans-serif;
     margin-top: 12px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 ul.office-details li i {
