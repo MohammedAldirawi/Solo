@@ -1,14 +1,7 @@
-/* Preloader */
-$(window).on('load', function() {
-    //Make sure whole website is fully loaded
-    $('#preloader-holder').delay(350).fadeOut('slow');
-});
-
-/* Owl Carousel - Team */
-var owlTeam = $('#team-members');
+// Team
 
 $(function() {
-    owlTeam.owlCarousel({
+    $("#team-members").owlCarousel({
         items: 2,
         autoplay: true,
         smartSpeed: 700,
@@ -16,80 +9,75 @@ $(function() {
         autoplayHoverPause: true,
         nav: true,
         dots: false,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            489: {
+                items: 2
+            }
+        }
     });
 });
+
+
+
+// Progress Bars
 
 $(function() {
-    owlTeam.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owlTeam.trigger('next.owl');
-        } else {
-            owlTeam.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
-});
-
-/* Animated Progress Bar - Team */
-$(function () {
     $('#progress-elements').waypoint(function() {
-        $('.progress-bar').each(function () {
-            $(this).animate({
-                width: $(this).attr('aria-valuenow') + '%'
-            }, 1000);
+        $('.progress-bar').each(function() {
+            $(this).animate({ width: $(this).attr('aria-valuenow') + '%' }, 1000);
         });
-        this.destroy(); // To not repeat animation
-    }, {
-        offset: '75%'
-    });
+        this.destroy();
+    }, { offset: 'bottom-in-view' });
 });
 
-/* Responsive Tabs */
-$(function () {
+
+// Responsive Tabs
+$(function() {
     $('#services-tabs').responsiveTabs({
         animation: 'slide'
     });
 });
 
-/* Isotope - Filter Portfolio */
+
+// Portfolio
+
 $(window).on('load', function() {
-    // Init Isotope
-    $('#isotope-container').isotope({
-        
+    // Initialize
+    $("#isotope-container").isotope({
+
     });
-
-    // Filter Buttons 
-    $('#isotope-filters').on('click', 'button', function() {
+    // Filter Items
+    $("#isotope-filters").on('click', 'button', function() {
+        // Git filter value
         var filterValue = $(this).attr('data-filter');
-
-        // Filter Portfolio Items
-        $('#isotope-container').isotope({
+        // Filter Portfolio
+        $("#isotope-container").isotope({
             filter: filterValue
         });
-
-        // Active Button
-        $('#isotope-filters').find('.active').removeClass('active');
+        // active button
+        $("#isotope-filters").find('.active').removeClass('active');
         $(this).addClass('active');
     });
 });
 
-/* Zoom Magnific */
+// Popup
 $(function() {
     $('#portfolio-wrapper').magnificPopup({
         delegate: 'a',
         type: 'image',
-        gallery:{
-            enabled:true
-          }
-      });
+        gallery: {
+            enabled: true
+        }
+    });
 });
 
-/* Owl Carousel - Testimonial */
-var owlTestimonial = $('#testimonial-slider');
-
+// Testimonial
 $(function() {
-    owlTestimonial.owlCarousel({
+    $("#testimonial-slider").owlCarousel({
         items: 1,
         autoplay: false,
         smartSpeed: 700,
@@ -101,30 +89,18 @@ $(function() {
     });
 });
 
-$(function() {
-    owlTestimonial.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owlTestimonial.trigger('next.owl');
-        } else {
-            owlTestimonial.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
-});
+// Stats Counter
 
-/* Counter */
 $(function() {
     $('.counter').counterUp({
-        delay: 20,
-        time: 2000
+        delay: 10,
+        time: 1000
     });
 });
 
-/* Clients */
-var owlClients = $('#clients-list');
-
+// Clients
 $(function() {
-    owlClients.owlCarousel({
+    $("#clients-list").owlCarousel({
         items: 6,
         autoplay: false,
         smartSpeed: 700,
@@ -136,16 +112,6 @@ $(function() {
     });
 });
 
-$(function() {
-    owlClients.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            owlClients.trigger('next.owl');
-        } else {
-            owlClients.trigger('prev.owl');
-        }
-        e.preventDefault();
-    });
-});
 
 /* Google Map */
 // Initialize and add the map
@@ -154,20 +120,21 @@ $(function initMap() {
     const mapCenter = { lat: 40.716881, lng: -73.994019 };
     // The map,
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 15,
-      center: mapCenter,
+        zoom: 15,
+        center: mapCenter,
     });
     // The marker, positioned at Uluru
     const marker = new google.maps.Marker({
-      position: mapCenter,
-      map: map,
+        position: mapCenter,
+        map: map,
     });
-  });
+});
 
-  /* Nav Show and Hide White BG */
-  $(function () {
 
-    $(window).scroll(function(){
+// Navigation => White Nav
+$(function() {
+
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 50) {
             // Show white bg
             $('nav').addClass('white-navbar');
@@ -182,20 +149,17 @@ $(function initMap() {
             $('#back-to-top').fadeOut();
         }
     });
-  });
+});
 
-  /* Smooth Scrolling */
-  $(function () {
+// Smooth Scrolling
 
-    $('.smooth').click(function (event){
-
+$(function() {
+    $("a.smmoth-scroll").click(function(event) {
         event.preventDefault();
-
-        var section_id = $(this).attr('href');
-
-        $('html, body').animate({
+        // Get Section Id
+        var section_id = $(this).attr("href");
+        $("html, body").animate({
             scrollTop: $(section_id).offset().top - 64
-        }, 1250, 'easeInOutExpo');
-        // - 64 to offset before top of section not inside it
+        }, 1250, "easeInOutExpo");
     });
-  });
+});
