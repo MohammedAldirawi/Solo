@@ -1276,3 +1276,20 @@ ul.navbar-nav li a:focus {
     font-size: 22px;
     display: none;
 }
+
+
+/* Mobile Menu */
+
+#navbar-header {
+    position: relative;
+}
+
+#mobile-nav-open-btn {
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    left: 90%;
+    top: 10px;
+    display: none;
+}

@@ -180,7 +180,7 @@ $(function initMap() {
     const mapCenter = { lat: 40.716881, lng: -73.994019 };
     // The map,
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 15,
+        zoom: 8,
         center: mapCenter,
     });
     // The marker, positioned at Uluru
