@@ -25,3 +25,8 @@ Third step on 11/22/2020:
 > - Write Statement, and Services HTML
 > - Apply CSS
 > - Add Tabs and View animation with jQuery
+
+6th step on 11/30/2020
+> - Write Responsive Layout
+> - Add Animation to some Sections
+
