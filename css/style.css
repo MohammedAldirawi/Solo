@@ -1231,7 +1231,7 @@ ul.navbar-nav li a:focus {
 }
 
 
-/*=================== Sticky Nav ======================*/
+/* Sticky Nav */
 
 .white-navbar {
     background: var(--white);
@@ -1259,9 +1259,7 @@ ul.navbar-nav li a:focus {
 }
 
 
-/*============================================
-                BACK TO TOP
-==============================================*/
+/* BACK TO TOP */
 
 .btn-back-to-top {
     position: fixed;
@@ -1278,18 +1276,29 @@ ul.navbar-nav li a:focus {
 }
 
 
-/* Mobile Menu */
+/* Animation */
 
-#navbar-header {
-    position: relative;
+#home-heading-1 {
+    animation-duration: 1.5s;
+    animation-delay: 1s;
 }
 
-#mobile-nav-open-btn {
-    font-size: 30px;
-    cursor: pointer;
-    z-index: 2;
-    position: absolute;
-    left: 90%;
-    top: 10px;
-    display: none;
+#home-heading-2 {
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+#home-text {
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+}
+
+#home-btn {
+    animation-duration: 1.5s;
+    animation-delay: 2.5s;
+}
+
+#arrow-down i {
+    animation-duration: 1.5s;
+    animation-delay: 3s;
 }
