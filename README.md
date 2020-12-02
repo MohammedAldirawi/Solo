@@ -5,14 +5,14 @@ I'll use the below for this project:
   - jQuery
   - Bootstrap
 
-First step on 11/21/2020:
+1st step on 11/21/2020:
 > Create Preloader with HTML,CSS, and jQuery.
 
-Seconde step on 11/22/2020:
+2nd step on 11/22/2020:
 > - Write Home section content with HTML.
 > - Apply CSS properties for Home section tags.
 
-Third step on 11/22/2020:
+3rd step on 11/22/2020:
 > - Write About section HTML.
 > - Apply CSS
 
