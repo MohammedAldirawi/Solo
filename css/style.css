@@ -1,5 +1,4 @@
 :root {
-    /* Google Fonts*/
     --open-sans: 'Open Sans', sans-serif;
     --raleway: 'Raleway', sans-serif;
     --moon-yallow: #f4c613;
@@ -40,9 +39,6 @@ section {
     overflow: hidden;
 }
 
-
-/* Preloader */
-
 #preloader {
     background-color: white;
     position: fixed;
@@ -64,9 +60,6 @@ section {
     margin-top: -35px;
     margin-left: -35px;
 }
-
-
-/* Home */
 
 #home {
     background: none;
@@ -130,9 +123,6 @@ section {
     margin: 8px 0 30px 0;
 }
 
-
-/* Buttons */
-
 .btn-general {
     font-family: var(--raleway), sans-serif;
     border-radius: 28px;
@@ -166,9 +156,6 @@ section {
     display: none;
 }
 
-
-/* Arrow Down */
-
 #arrow-down {
     position: absolute;
     left: 50%;
@@ -187,9 +174,6 @@ section {
     color: var(--moon-yallow);
 }
 
-
-/* Conetnet Boxes */
-
 .content-box-lg {
     padding: 120px 0;
 }
@@ -201,9 +185,6 @@ section {
 .content-box-sm {
     padding: 90px 0;
 }
-
-
-/* Verticaul Headings */
 
 .vertical-heading h5 {
     color: var(--moon-yallow);
@@ -226,9 +207,6 @@ section {
     line-height: 45px;
 }
 
-
-/* About 01 */
-
 #about-right p:first-child {
     margin-bottom: 30px;
 }
@@ -241,9 +219,6 @@ section {
     display: block;
     margin: 0 auto;
 }
-
-
-/* About 02 */
 
 #about-02 {
     background-color: var(--white-smoke);
@@ -278,9 +253,6 @@ section {
     margin-top: 20px;
 }
 
-
-/* Hover State */
-
 .about-item:hover {
     background-color: var(--moon-yallow);
 }
@@ -299,9 +271,6 @@ section {
     transform: translateY(-20px);
 }
 
-
-/* Smooth Transition */
-
 .about-item,
 .about-item i,
 .about-item hr {
@@ -314,9 +283,6 @@ section {
     -webkit-transition: all 400ms linear;
     transition: all 400ms linear;
 }
-
-
-/* Team */
 
 #team {
     padding-top: 100px;
@@ -364,9 +330,6 @@ section {
     opacity: 1;
 }
 
-
-/* Social Icons */
-
 ul.social-list {
     padding: 0;
     margin-top: 20px;
@@ -405,23 +368,17 @@ ul.social-list li:nth-child(3) a:hover {
     border-color: transparent;
 }
 
-
-/* Slider Buttons */
-
 .owl-theme .owl-nav [class*=owl-] {
     color: var(--grey);
     font-size: 40px;
     background: none;
-    margin: 0px;
+    margin: 0;
 }
 
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none;
     color: var(--grey);
 }
-
-
-/* Skills */
 
 .skill {
     margin-bottom: 20px;
@@ -472,9 +429,6 @@ ul.social-list li:nth-child(3) a:hover {
     left: 23%;
 }
 
-
-/* Statement */
-
 #statement {
     background: url('../img/tech/tech-quote.webp') no-repeat fixed center;
     background-size: cover;
@@ -497,9 +451,6 @@ ul.social-list li:nth-child(3) a:hover {
     margin-top: 8px;
 }
 
-
-/* Horizontal Heading */
-
 .horizontal-heading {
     margin-bottom: 80px;
 }
@@ -518,9 +469,6 @@ ul.social-list li:nth-child(3) a:hover {
     line-height: 45px;
     margin: 0;
 }
-
-
-/* Services 01 */
 
 #services-01 img {
     margin: 60px 0;
@@ -562,9 +510,6 @@ ul.social-list li:nth-child(3) a:hover {
 .service p {
     line-height: normal;
 }
-
-
-/* Services 02 (Responsive Tabs) */
 
 #services-02 {
     background: var(--white-smoke);
@@ -643,9 +588,6 @@ ul.social-list li:nth-child(3) a:hover {
     border: 1px solid var(--grey);
 }
 
-
-/* Portfolio */
-
 #portfolio {
     padding-bottom: 160px;
 }
@@ -662,9 +604,6 @@ ul.social-list li:nth-child(3) a:hover {
     overflow: hidden;
     position: relative;
 }
-
-
-/* Filters */
 
 #isotope-filters {
     margin-bottom: 10px;
@@ -695,9 +634,6 @@ ul.social-list li:nth-child(3) a:hover {
     border-bottom: 3px solid var(--moon-yallow);
 }
 
-
-/* Zoom Effects */
-
 .portfolio-item img {
     width: 100%;
     height: auto;
@@ -709,9 +645,6 @@ ul.social-list li:nth-child(3) a:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-
-/* Overlay Effect */
 
 .portfolio-item-overlay {
     position: absolute;
@@ -726,9 +659,6 @@ ul.social-list li:nth-child(3) a:hover {
     -webkit-transition: add .5s ease;
     transition: all .5s ease;
 }
-
-
-/* Items Details Effects */
 
 .portfolio-item-details {
     width: 100%;
@@ -772,9 +702,6 @@ ul.social-list li:nth-child(3) a:hover {
     transition: all .5s;
 }
 
-
-/* Show Overlay on Hover */
-
 .portfolio-item:hover .portfolio-item-details h3 {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -790,9 +717,6 @@ ul.social-list li:nth-child(3) a:hover {
     -webkit-transition: all .8s ease;
     transition: all .8s ease;
 }
-
-
-/* Testimonials */
 
 #testimonials {
     background: var(--white-smoke);
@@ -845,9 +769,6 @@ ul.social-list li:nth-child(3) a:hover {
 .author .author-name-des p {
     margin: 0;
 }
-
-
-/* Pricing */
 
 .pricing-table {
     -webkit-box-shadow: 0 0 10px 0 #0000001a;
@@ -976,9 +897,6 @@ ul.social-list li:nth-child(3) a:hover {
     border: 1px solid var(--grey);
 }
 
-
-/* Stats */
-
 #stats {
     background: url(../img/stats/stats-bg-min.webp) no-repeat fixed center;
     background-size: cover;
@@ -1034,9 +952,6 @@ ul.social-list li:nth-child(3) a:hover {
     transform: translateY(-20px);
 }
 
-
-/* Clients */
-
 #clients .horizontal-heading {
     margin-bottom: 30px;
 }
@@ -1053,11 +968,8 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .client img {
-    display: inline-block !important;
+    display: inline-block!important;
 }
-
-
-/* Blog */
 
 #blog {
     background: var(--white-smoke);
@@ -1121,9 +1033,6 @@ ul.social-list li:nth-child(3) a:hover {
     margin: 0;
 }
 
-
-/* Contact */
-
 #contact-left p {
     margin: 25px 0 20px 0;
 }
@@ -1183,15 +1092,9 @@ ul.office-details li i {
     min-height: 164px;
 }
 
-
-/* Map */
-
 #map {
     height: 600px;
 }
-
-
-/* Footer */
 
 footer {
     background: var(--grey);
@@ -1207,9 +1110,6 @@ footer p {
 footer p span {
     color: var(--moon-yallow);
 }
-
-
-/* Navbar */
 
 .navbar {
     padding: 30px 85px;
@@ -1237,9 +1137,6 @@ ul.navbar-nav li a:focus {
     color: var(--moon-yallow);
 }
 
-
-/* Sticky Nav */
-
 .white-navbar {
     background: var(--white);
     padding: 10px 85px;
@@ -1265,9 +1162,6 @@ ul.navbar-nav li a:focus {
     font-weight: 600;
 }
 
-
-/* BACK TO TOP */
-
 .btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -1281,9 +1175,6 @@ ul.navbar-nav li a:focus {
     font-size: 22px;
     display: none;
 }
-
-
-/* Animation */
 
 #home-heading-1 {
     animation-duration: 1.5s;
