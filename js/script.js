@@ -173,24 +173,18 @@ $(function() {
 });
 
 
+/* Map */
+$(function() {
+    var mymap = L.map('map').setView([40.716881, -73.994019], 15);
+    // Install Layer 
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(mymap);
+    // Marker 
+    L.circleMarker([40.716881, -73.994019], { radius: 15 }).addTo(mymap);
 
-
-/* Google Map */
-// Initialize and add the map
-$(function initMap() {
-    // The location of Uluru
-    const mapCenter = { lat: 40.716881, lng: -73.994019 };
-    // The map,
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: mapCenter,
-    });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
-        position: mapCenter,
-        map: map,
-    });
-})
+    L.marker([40.716881, -73.994019]).addTo(mymap);
+});
 
 /* Animation */
 // animate on scroll
