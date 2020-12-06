@@ -790,8 +790,8 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .pricing-table .price {
-    border-top: 1px solid var(--grey);
-    border-bottom: 1px solid var(--grey);
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
     padding: 24px 0;
 }
 
