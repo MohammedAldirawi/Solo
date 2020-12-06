@@ -26,7 +26,46 @@ I'll use the below for this project:
 > - Apply CSS
 > - Add Tabs and View animation with jQuery
 
-6th step on 11/30/2020
-> - Write Responsive Layout
-> - Add Animation to some Sections
+6th step on 11/27/2020
+> - Write Work, & Testimonials HTMl
+> - Apply CSS
+> - Add jQuery Filter & Zoom Effect
+
+7th step on 11/29/2020
+> - Write Pricing, & Stats HTML
+> - Apply CSS
+> - Add jQuery Counter
+
+8th step on 11/30/2020
+> - Write Clients, Blog, & Contact HTML
+> - Apply CSS
+> - Add jQuery Slider
+
+9th step on 12/02/2020
+> - Write Map, & Footer HTML
+> - Write Map JavaScript
+> - Apply CSS
+
+10th step on 12/03/2020
+> - Write Navigation, Back To Top HTML
+> - Apply CSS
+> - ADD jQuery
+
+11th step on 12/03/2020
+> - Perfecting Responsive CSS with media queries for All Devices
+> - Write Nav Menu HTML
+> - Apply Nav Menu CSS
+
+12th step on 12/05/2020
+> - Applying Animation
+> - Add WOW Master to animate some sections
+> - Add Final Touches for HTML, CSS, JavaScript
+
+Last Step on 12/06/2020
+> - Optimize images and video
+> - Add Code Validation
+> - Let Solo Going Live in "https://mohtareq.github.io/Solo/" 
+
+Done!
+
 
