@@ -421,6 +421,15 @@
 }
 
 
+/* Pricing */
+
+@media (max-width: 575px) {
+    .para {
+        padding-top: 20px;
+    }
+}
+
+
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 
 @media (max-width: 480px) {
