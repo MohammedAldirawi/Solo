@@ -1,4 +1,7 @@
 # Solo Website
+
+> - Let Solo Going Live in "https://mohtareq.github.io/Solo/" 
+
 I'll use the below for this project: 
   - HTML
   - CSS
@@ -64,7 +67,6 @@ I'll use the below for this project:
 Last Step on 12/06/2020
 > - Optimize images and video
 > - Add Code Validation
-> - Let Solo Going Live in "https://mohtareq.github.io/Solo/" 
 
 Done!
 
