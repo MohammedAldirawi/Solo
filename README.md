@@ -1,6 +1,7 @@
 # Solo Website
 
-> - Let Solo Going Live in "https://solo-mo.netlify.app/" 
+> - Let Solo Going Live in "https://soloo.netlify.app/" 
+
 
 I'll use the below for this project: 
   - HTML
