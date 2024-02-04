@@ -1,4 +1,4 @@
-# Solo Website
+# Solo: is a proof of concept website
 
 > - Let Solo Going Live in "https://soloo.netlify.app/" 
 
